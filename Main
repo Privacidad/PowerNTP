@@ -1,0 +1,30 @@
+package priv.code.net;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class PowerNTP extends JavaPlugin {
+	public String nombre = ChatColor.WHITE+"["+ChatColor.RED+"PowerNTP"+ChatColor.WHITE+"]";
+	
+public void onEnable() {
+	Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA+"<------------------------------------>");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+(nombre+"has been activated"));
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+"Thanks for use this plugin");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+"For more updates send a dm on Twitter @Priv_acidad");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA+"<------------------------------------>");	
+	
+}
+
+public void onDisable() {
+	
+	Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA+"<------------------------------------>");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+(nombre+"has been desactivated"));
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+"Thanks for use this plugin");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.WHITE+"For more updates send a dm on Twitter @Priv_acidad");
+	Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA+"<------------------------------------>");
+	
+	
+}
+
+}
